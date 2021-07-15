@@ -1,0 +1,23 @@
+/* inline CSS */
+  /* accessing class name with .  */
+  /* id with # */
+  .order1 {
+    border: 2px solid red;
+    width: 30%;
+    height: 200px;
+  }
+
+  .order2{
+    border:2px dotted green;
+    width: 30%;
+    height: 100px;
+  }
+
+  figure{
+    border: 2px solid greenyellow;
+    width: 100%;
+
+  }
+  img{
+    width: 30%
+  }
