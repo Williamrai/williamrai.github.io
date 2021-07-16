@@ -1,0 +1,184 @@
+/* Universal */
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 55px 1fr 60px;
+    height: 100vh;
+    width: 100vw;
+}
+
+ul{
+    margin: 0;
+}
+
+/* Nav */
+.header{
+    background-color: black;
+    color: white;
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+    margin-top: 10px;
+}
+
+/* margin: top right bottom left */
+/* margin: topbottom leftright */
+.nav-menu li{
+    margin: 0 30px;
+}
+
+.nav-menu div:hover{
+    background-color: orange;
+}
+
+/* Content */
+.content-wrapper{
+    display: grid;
+    background-color: lightgray;
+}
+
+.top-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+iframe{
+    width: 90%;
+    height: 80%;
+    border: 4px solid pink;
+    overflow-y: scroll;
+}
+
+/* top content */
+.top-content .embeded-content{
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Bottom Content */
+.bottom-content{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+/* bottom left content */
+.bottom-left-content{
+  margin-left: 10%;
+}
+
+.border-image-content{
+    text-align: center;
+}
+
+.border-image-content img{
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 270px;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* bottom right content */
+.bottom-right-content{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-content{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.text-content p{
+    margin: 0;
+}
+
+.hotpink-text{
+    height: 25%;
+    background-color: hotpink;
+    font-family: 'Arial';
+    vertical-align: text-bottom;
+    position: relative;
+}
+
+.hotpink-text p{
+    position: absolute;
+    bottom: 0;
+}
+
+.pink-text{
+    height: 40%;
+    background-color: pink;
+    font-family: 'Courier';
+    position: relative;
+    font-size: 21px;
+    color: #2A0F0F;
+}
+
+.pink-text p{
+    position: absolute;
+    bottom: 0;
+}
+
+.lightpink-text{
+    height: 35%;
+    background-color: lightpink;
+    font-family: Corsiva;
+    font-size: 21px;
+    position: relative;
+}
+
+.lightpink-text p{
+    position: absolute;
+    bottom: 0;
+}
+
+/* Button */
+.cornered-btn{
+    border-radius: 12px;
+    padding: 10px 10px;
+    width: 225px;
+    background-color: orange;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cornered-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Footer*/
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer p{
+    text-align: center;
+}
+
+

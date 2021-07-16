@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.nav{
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.table_section{
+  margin-top: 20px;
+}
+
+.creditTb{
+  background-color: yellow;
+  text-align: center;
+}
+
+.creditTb th{
+  width: 100px;
+}
+
+.image{
+  margin-top: 20px;
+}
+
+.image img{
+  width: 300px;
+  height: 200px;
+}
+
+.descriptions{
+  border: 2px solid red;
+}
+
+#p1{
+  color: hotpink;
+  font-family: Arial;
+}
+
+#p2{
+  color: pink;
+  font-family: Courier;
+}
+
+#p3{
+  color: lightpink;
+  font-family: Corsiva;
+}
+
+.txt_area{
+  margin-top: 15px;
+  text-align: left;
+}
+
+
+.assignment1{
+  margin-top: 20px;
+}
