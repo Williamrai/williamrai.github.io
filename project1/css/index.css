@@ -39,10 +39,10 @@ body{
 /* Things to do section */
 .todo-wrapper{
     border: 2px solid black;
-    background-color: pink;
+    background-color: #FFE3E3;
     width: 95%;
     height: 70vh;
-    color: white;
+    color: #628395;
     /* margin-left: 8px; */
 }
 
