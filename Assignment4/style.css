@@ -87,7 +87,6 @@ body{
     66.4% {transform: rotate(150deg);}
     74.7% {transform: rotate(180deg);}
     83% {transform: rotate(210deg);}
-    83% {transform: rotate(210deg);}
     91.3% {transform: rotate(240deg);}
     100% {transform: rotate(270deg);}
 
@@ -107,7 +106,7 @@ body{
     74.7% {transform: rotate(22.5deg);}
     83% {transform: rotate(25deg);}
     91.3% {transform: rotate(27.5deg);}
-    100% {transform: rotate(28deg);}
+    100% {transform: rotate(30deg);}
 
     /* 100% {transform: rotate(30deg);} */
 }
