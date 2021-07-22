@@ -56,7 +56,7 @@ body{
     margin-top: -10.5%;
     transform-origin: 0% 50%;
     transform: rotate(-90deg);
-    animation: minute-move 10s forwards;
+    animation: minute-move 10s 1s forwards;
 }
 
 .hour-hand{
@@ -66,7 +66,7 @@ body{
     left: 50%;
     margin-top: -7%;
     transform-origin: 0% 50%;
-    animation: hour-move 10s forwards;
+    animation: hour-move 10s 1s forwards;
 }
 
 .clock img{
