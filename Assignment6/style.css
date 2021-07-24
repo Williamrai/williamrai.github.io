@@ -1,0 +1,26 @@
+.my-img{
+    width: 100%;
+}
+
+.md-img{
+    width: 60%;
+}
+
+.collapse ul li a{
+    color: #0275d8 !important;
+}
+
+.collapse ul li a:hover{
+    background-color: #0275d8;
+    border-radius: 50%;
+    color: white !important;
+}
+
+@media (max-width: 575px){
+
+.collapse ul li a:hover{
+  background-color: transparent;
+  color: #0275d8 !important;
+} 
+
+}
