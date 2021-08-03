@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Guess My Number</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <h1 class="h1-style">GUESS MY NUMBER</h1>
+            <h3 class="h2-style">Guess the number between 1 and 100</h3>
+            <div class="game-container">
+                <!-- Game Header -->
+               <div class="header">
+                    <div class="score">
+                        <h4 class="h4-1">Score: <span id="score-el"></span></h4>
+                        <h4 class="h4-2">High Score: <span id="high-score-el"></span></h4>
+                    </div>
+                 
+                    <div class="play-again">
+                        <button class="btn" id="reset-btn">Reset</button>
+                    </div>
+               </div>
+               
+               <!-- Main Game -->
+               <div class="main-game-wrapper">
+                    <div class="main-game-window" id="maingw-div">
+                        
+                        <div class="guess-image-wrapper">
+                            <div class="guess-image">
+                                <img id="img-el" src="img/guess.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <!-- Checking Part UI -->
+                        <div class="check-part" id="gameplay-el">
+                            <input type="number" id="user-input" placeholder="Guess a number">
+                            <button class="btn2" id="check-btn">Check</button>
+                            <p id="feed-el">Guess a Number</p>
+                        </div>
+
+                        <!-- Game Winner UI -->
+                        <div class="game-winner" id="game-winner-el">
+                            <h2>Congratulation</h2>
+                            <p>Your guess was correct. <span id="mynumber-el"><b>25</b></span> is my secret number.</p>
+                            <h2 id="final-score-el">Your Score : <span id="achieved-score-el">7</span> </h2>
+                            <h4>Best: <span id="best-score-el"></span> </h4>
+                            <button class="btn2" id="play-again-btn">Play Again</button>
+                        </div>
+
+                        <!-- Game over UI -->
+                        <div class="game-over" id="game-over-el">
+                            <h3>Unfortunately You Lost the Game</h3>
+                            <p>Don't give up and Try Again. You can win next time. </p>
+                            <p>My number was : <b><span id="secret-no-el"></span></b></p>
+                            <button class="btn2" id="try-again-btn">Try Again</button>
+                        </div>
+                    </div>
+               </div>
+               
+               <!-- Game Guess History -->
+               <div class="guess-history-wrapper">
+                    <div class="guess-history">
+                        <h3>Guess History</h3>
+                        <ul id="guess-list">
+                           
+                        </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <script src="script.js"> </script>
+    </body>
+</html>

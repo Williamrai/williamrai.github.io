@@ -1,0 +1,296 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    background-color: #B5EAEA;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-style{
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #444;
+    text-shadow: 
+      1px 0px 1px #ccc, 0px 1px 1px #eee, 
+      2px 1px 1px #ccc, 1px 2px 1px #eee,
+      3px 2px 1px #ccc, 2px 3px 1px #eee,
+      4px 3px 1px #ccc, 3px 4px 1px #eee,
+      5px 4px 1px #ccc, 4px 5px 1px #eee,
+      6px 5px 1px #ccc, 5px 6px 1px #eee,
+      7px 6px 1px #ccc;
+}
+
+.h2-style{
+    margin-top: 0;
+}
+
+/* Main Game Container */
+.game-container{
+    width: 50%;
+    /* height: 80%; */
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px 8px rgba(237, 246, 229,0.25);;
+    background-color: rgb(237, 246, 229); 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header of the game  */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+
+}
+
+.score{
+    /* border: 1px solid black; */
+    background-color: #FFBCBC;
+    box-shadow: 0 0 2px rgba(0,0,0,0.11);
+    text-align: center;
+    padding: 0 15px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.h4-1{
+    margin-bottom: 0;
+}
+
+.h4-2{
+    margin-top: 10px;
+}
+
+.header h2{
+    text-align: center;
+}
+
+.play-again{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;    
+}
+
+.btn{
+    background-color: #FFBCBC;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.11);
+    transition: box-shadow 100ms;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.btn:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.11);
+    color: white;
+
+}
+
+/* All the main interfaces */
+.main-game-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Floating window */
+.main-game-window{
+    width: 75%;
+    height: 350px;
+    /* padding: 10%; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: #F38BA0; */
+    background-color: #C1AC95;
+    box-shadow: 0 0 10px rgba(0,0,0,0.24);
+    border-radius: 20px;
+}
+
+/* the image container inside the window */
+.guess-image-wrapper{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*  the image box*/
+.guess-image{
+    width: 100px;
+    height: 100%;
+}
+
+/* the image */
+.guess-image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* the main part of the game */
+.check-part{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.check-part input{
+    width: 35%;
+   background-color: #EDF6E5;
+   border: 1px solid #EDF6E5;
+   padding: 15px 10px;
+   border-radius: 20px;
+   outline: none;
+   box-shadow: 0 0 10px 5px rgba(237, 246, 229,0.25); 
+   text-align: center;
+}
+
+
+.btn2{
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #62ab37;
+    border: 1px solid #62ab37;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+    border-radius: 12px;
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 100ms;
+}
+
+.btn2:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+
+.check-part p{
+    margin-top: 40px;
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+.feed-zoom{
+    animation: shake 1s;
+}
+
+
+/* History wrapper */
+.guess-history-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: orange; */
+}
+
+.guess-history{
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: #B5EAEA;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.24);
+
+}
+
+.guess-history h3{
+    margin-left: 20px;
+}
+
+/* You Win */
+
+
+/* Game Over */
+.game-over{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.game-over h3{
+    color: #233d4d;
+    margin-bottom: 10px;
+}
+
+.game-over p{
+    color: #5c574f;
+    margin-top: 5px;
+}
+
+#secret-no-el{
+    font-size: 20px;
+}
+
+/* Game Winner UI */
+.game-winner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.game-winner h2{
+    margin-bottom: 10px;
+}
+
+.game-winner p{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#mynumber-el{
+    font-size: 25px;
+}
+
+.game-winner h2{
+    margin-top: 1px;
+}
+
+.game-winner h4{
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    
+}
