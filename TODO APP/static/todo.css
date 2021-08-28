@@ -1,0 +1,592 @@
+/* Main section layo */
+body{
+    /* background-color: #36558F; */
+    margin: 0;
+    display:flex;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(90deg, rgba(14,16,61,1) 9%, rgba(141,134,201,1) 74%, rgba(255,229,217,1) 100%);
+
+}
+
+
+
+.main-container{
+    border: black 30px solid;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    /* border-radius: 20px; */
+    display:flex;
+    min-height: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 50px black;
+}
+
+.container-left{
+    width: 30%;
+    height: 100%;
+    background-color: #fffffffd;
+    box-sizing: border-box;
+    min-width: 55px;
+    /* max-width: 100PX;   */
+    /* RESIZE DIV  */
+    flex-grow: 1;
+    resize: horizontal;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    /* THIS IS FOR THE DIV ON THE BOTTOM RIGHT OF THE 
+    TASK DISPLAY OCUPY THE REMINDER OF THE SPACE AFTER 
+    THE MENU */
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.container-right{
+    width: 70%;
+    height: 100%;
+    background-color:#E8E8E8;
+    box-sizing: border-box;
+    min-width: 200px;  
+    flex-grow: 2;
+    /* THIS IS FOR THE DIV ON THE BOTTOM RIGHT OF THE 
+    TASK DISPLAY OCUPY THE REMINDER OF THE SPACE AFTER 
+    THE MENU */
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+}
+
+/* MENU LEFT & ICON  ------------------------------- */
+.menu-container{
+    /* border: black 2px solid; */
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    /* SEPARATE ICONS */
+    /* justify-content:space-between; */
+    /* FLOAT DOWN WHEN THE SPACE ISN'T ENOUGH */
+    flex-wrap: wrap;  
+    /* border-bottom: black 2px solid; */
+    padding: 2px 2px;
+}
+
+.welcome-user{
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+/* .menu_icon>div{
+    width: 15%;
+    height: 3px;
+    max-width: 35px;
+    min-width: 25px;
+    background-color: black;
+    margin: 6px 0;
+    margin-left: 20%;
+
+} */
+
+.menu-logo{
+    /* border: red 1px solid; */
+    width: 15%;
+    height: 30px;
+    margin-right: 3%;
+    max-width: 35px;
+    min-width: 25px;
+    /* float margin */
+    margin-top: 2%;
+    margin-left: 2%;
+    /* float:right; */
+}
+
+.menu-logo>img{
+width: 100%;
+height: 100%;
+}
+.add-category{
+    /* made changes here */
+    margin-top:4%;
+    margin-bottom: 0;
+    margin-left: 3%;
+}
+.add-category a{
+    /* margin-top: -0.1%; */
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.add-category a:hover{
+    text-decoration:underline;
+    /* added this line */
+    text-underline-position: under;
+    color: black;
+    text-decoration-color:cornflowerblue ;
+    text-decoration-thickness: 3px;
+}
+
+
+
+
+
+
+/* LEFT DIV CATEGORY TABS */
+
+.category-display{
+    /* border: blue solid 3px; */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* THIS IS FOR THE DIV ON THE BOTTOM RIGHT OF THE 
+    TASK DISPLAY OCUPY THE REMINDER OF THE SPACE AFTER 
+    THE MENU */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+
+}
+
+.category{
+    /* border: purple solid 2px; */
+    width: 90%;
+    height: auto;
+    /* min-height: 65px; */
+    
+    /* changed to 4% */
+    margin-top: 4%; 
+    padding: 5px;
+
+    background-color: #F5F1F0;
+    display: flex;
+    flex-direction: column;  
+    position: relative;
+}
+
+.to-task-cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/* .category-input{
+    padding: 10px;
+    margin: 0 120px;
+} */
+
+.category form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .category a{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+} */
+
+.category-save-btn{
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.enter-cat{
+    display: block;
+    width: 90%;
+    padding: 10px 20px;
+}
+
+    /*  Scroll bar  */
+
+.category-display::-webkit-scrollbar{
+    width: 5px;
+}
+.category-display::-webkit-scrollbar-track{
+    background: white;
+}
+.category-display::-webkit-scrollbar-thumb {
+    background-color: #36558F;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+}
+
+.category-title, .task-counter {
+    margin-top: 1px;
+    margin-bottom: 0;
+    margin-left: 3px;    
+
+}
+
+.category-title{
+    font-size: 1.2rem;
+    margin-top: 5px;
+    border: none;
+    background-color: transparent;
+
+}
+.task-counter{
+    margin-left: 8px;
+    font-size: 0.9rem;
+    opacity: 0.5;
+    margin-bottom: 2px;
+
+}
+
+
+
+
+
+/* RIGHT NAVBAR AND LOGOUT BUTTON---------------------------------*/
+    /* contains both sides of the menu */
+.container-right-navBar{
+    /* border:royalblue solid 2px; */
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+    height: auto;
+    display: flex;
+
+}
+    /* there are two. 1. recent and completed tasks. 2. logout btn */
+.right-menu-container{
+    box-sizing: border-box;
+    /* border: red solid 2px; */
+    width: 50%;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+    /* unordered list on the right menu */
+.right-menu{
+    list-style: none;
+    margin-left: -10px;
+}
+    /* list properties */
+.right-menu>li{
+    display: inline-block;
+    padding-right: 10px;
+}
+    /* anchor element on list of the right menu */
+.right-menu>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.right-menu>li>a:hover{
+    text-decoration: underline;
+    /* added this for full underline */
+    text-underline-position: under;
+    text-decoration-color:cornflowerblue ;
+    text-decoration-thickness: 3px;
+}
+
+/* logout button container setup */
+.container-logout-btn{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    box-sizing: border-box;
+}
+
+/* logout button properties */
+.logout-btn{
+    margin-right: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    padding:7px 25px;
+    cursor: pointer;
+}
+
+.logout-btn:hover{
+    background-color: cornflowerblue;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+/* TASK DISPLAY ON THE RIGHT  */
+.right-display{
+    /* border:red solid 2px; */
+    width: 100%;
+    box-sizing: border-box;
+    /* THIS IS FOR THE DIV ON THE BOTTOM RIGHT OF THE 
+    TASK DISPLAY OCUPY THE REMINDER OF THE SPACE AFTER 
+    THE MENU */
+    flex-grow: 1;
+    /*POSITION RELATIVE TO PLACE BUTTON */
+    position: relative;
+    /* SCROLL ON DIV SECTION TASK DISPLAY */
+    display: flex;
+    /* justify-content:baseline; */
+    /* float: left; */
+    flex-direction:column;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    overflow-y: scroll;
+}
+
+
+.right-display::-webkit-scrollbar{
+    width: 5px;
+}
+.right-display::-webkit-scrollbar-track{
+    background: white;
+}
+.right-display::-webkit-scrollbar-thumb {
+    background-color: #36558F;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+}
+
+/* add btn  */
+.addTask{
+    /* POSITION ABSOLUTE RELATIVE TO RIGHT-DISPLAY */
+    position: absolute;
+    bottom:0;
+    right: 0;
+    margin: 20PX;
+    text-decoration: none;
+    
+}
+
+.addTask>button{
+    /* display:block; */
+    /* padding-bottom: 4px;  */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #f2f1ed;
+    font-size: 1.1rem;
+    background-color: white;
+    position:fixed;
+    bottom:7vmin ;
+    right: 7vmax;
+    box-shadow: 0 0 3px #b8b6b2;
+    cursor: pointer;
+}
+.addTask>button:hover{
+    background-color:cornflowerblue ;
+    color: white;
+}
+
+
+
+/* TASKS LAYOUT */
+
+.task{
+    /* border: purple solid 2px; */
+    /* height: auto; */
+    width: 90%;
+    height: auto;
+    /* overflow-y: scroll; */
+    margin: 10px auto;
+    border-radius: 15px;
+    position: relative;
+    background-color: white;
+}
+
+.task h3{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.dueDate{
+    margin-top: -18px;
+    margin-left: 30px;
+    opacity: 0.3;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.description-task{
+    margin: 10px 40px;
+}
+
+.checkbox{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    box-shadow: 0px 0px 2px black;
+}
+
+
+/* Add a new task modal */
+/* reusable classes */
+.m0{
+    margin: 0;
+}
+
+.mt8{
+    margin-top: 8px;
+}
+
+.mt16{
+    margin-top: 16px;
+}
+
+.right-align{
+    text-align: right;
+}
+/* end of reusable classes */
+
+.add-container{
+    max-width: 450px;
+    width: 450px;
+    height: 450px;
+    background-color: #F5F5F5;
+    padding: 2% 2% 0.5% 2%;
+    box-shadow: 0 2px 5px 1000px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: -250px;
+   
+
+}
+
+.add-container-hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.add-container-appear{
+    opacity: 1;
+}
+
+.add-task-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-style{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.txt-area-style{
+    border: none;
+    border-radius: 6px;
+    max-width: 100%;
+    resize: none;
+    overflow: auto;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.date-style{
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.save-task-btn{
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.btn-save{
+    padding: 10px 100px;
+    border: 1px solid #2D936C;
+    background-color: #2D936C;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* Card */
+.card-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFA;
+    margin-top: 20px;
+    display: flex;
+}
+
+.card{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.p-due{
+    margin-right: 10px;
+    color: #9F9E9E;
+    margin-bottom: 0;
+}
+
+.h4-task{
+    margin-left: 10px;
+}
+
+.done-wrapper{
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-done{
+    border: none;
+    background-color: transparent;
+    color: red;
+}
+
+.btn-done img{
+    width: 35px;
+}
+
+.close-btn{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.no-task{
+    text-align: center;
+    font-size: 30px;
+}
